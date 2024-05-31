@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Responsive</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav id="menu">
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <a href="#" class="enlace">
+      <img src="img/copia.jpg" alt="logo">
+    </a>
+    <ul>
+      <li><a href="#menu">Inicio</a></li>
+      <li><a href="#carrusel">Nosotros</a></li>
+      <li><a href="#productos">Nuestros Productos</a></li>
+      <li><a href="loginPagina.html">Iniciar Sesión</a></li>
+      <li><a href="#pie-pagina">Contáctanos</a></li>
+    </ul>
+  </nav>
+
+  <!-------------------------CARRUSEL DE IMAGENES con Glider-------------------------------------->
+  <section id="carrusel">
+    <div class="contenedor">
+      <main class="contenido-principal">
+        <img src="img/logo.png" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
+        <div class="contenido-principal__contenedor">
+          <h1 class="contenido-principal__titulo"> Misión</h1>
+          <p class="contenido-principal__resumen">
+            EggRut Busca conectar a toda la problación con huevos 100% Naturales, sin dejar de lado a las gallinas
+            ponedoras y al campesino productor.
+          </p>
+          <br>
+          <p class="contenido-principal__resumen">
+            Este no solamente es un aplicativo para la venta, es un apicativo que promueve el cuidado de las gallinas
+            ponedoras y el apoyo al campo Colombiano.
+          </p>
+        </div>
+      </main>
+
+      <div class="carousel">
+        <div class="carousel__contenedor">
+          <button aria-label="Anterior" class="carousel__anterior">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+
+          <div class="carousel__lista">
+            <div class="carousel__elemento">
+              <img src="img/img1.jpg" alt="Finca Avícola La Linda">
+              <p>Finca Avícola La Linda</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/img3.jpeg" alt="Finca Avícola Doña Rosa">
+              <p>Finca Avícola Doña Rosa</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/img2.jpg" alt="Finca Avícola La Cariñosa">
+              <p>Finca Avícola La Cariñosa</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/img4.jpeg" alt="Reunion Avícola Mensual">
+              <p>Reunion Avícola Mensual</p>
+            </div>
+
+            <div class="carousel__elemento">
+              <img src="img/9.png" alt=".........">
+              <p>.........</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/9.png" alt=".........">
+              <p>.........</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/9.png" alt=".........">
+              <p>.........</p>
+            </div>
+            <div class="carousel__elemento">
+              <img src="img/9.png" alt=".........">
+              <p>.........</p>
+            </div>
+          </div>
+
+          <button aria-label="Siguiente" class="carousel__siguiente">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+
+        <div role="tablist" class="carousel__indicadores"></div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+  </section>
+
+  <!--  Modulo Productos  -->
+  <section class="seccion" id="productos">
+    <h1 class="nuestros_productos">
+      <font color="Black">Nuestros Productos</font>
+    </h1>
+    <div class="card">
+      <div class="face front">
+        <img src="img/img_huevo_A.jpg" alt="">
+        <h3>Huevo A</h3>
+      </div>
+      <div class="face back">
+        <h3>Huevo A</h3>
+        <p>El huevo A es el mas pequeño de nuestra producción, esto no quiere decir que sea el peor, al ser natural
+          cuenta con una gran fuente de proteina, ideal para el día a día y el desayuno para los pequeños de nuestros
+          hogares.</p>
+        <div class="link">
+          <a href="../Eccomerce/index.html">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="face front">
+        <img src="img/img_huevo_AA.jpg" alt="">
+        <h3>Huevo AA</h3>
+      </div>
+      <div class="face back">
+        <h3>Huevo AA</h3>
+        <p>El Huevo AA es el huevo mediano de nuestra producción, al estar en el punto medio contine más proteia que
+          nuestro Huevo A, este tipo de huevo es delicioso, ideal para el día a día.</p>
+        <div class="link">
+          <a href="../Eccomerce/index.html">Comprar</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="face front">
+        <img src="img/img_huevo_A.jpg" alt="">
+        <h3>Huevo AAA</h3>
+      </div>
+      <div class="face back">
+        <h3>Huevo AAA</h3>
+        <p>El huevo AAA es el más grande de nuestra producción, al ser el mas grande contiene mayor proteina que el
+          Huevo A y AA, esto lo hace ideal para el día a día, es indispensable para mantener una alimentación saludable,
+          por su alto contenido de proteina favorece la recuperación muscular.</p>
+        <div class="link">
+          <a href="../Eccomerce/index.html">Comprar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  Carrusel de Gallinas con Swiper   -->
+
+  <article>
+
+    <div class="videos">
+      <div class="video1">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FN821Da2vaQ?si=alLlMWCi-O7pVnxe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+     <!-- Swiper 
+     <div class="container">
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-container mySwiper">
+       
+          <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                  <img src="img/01.jpg"
+                      alt="">
+                  <div class="card-description">
+                      <div class="card-title">
+                          <h4>Descripción</h4>
+                      </div>
+                      <div class="card-text">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
+                              modi
+                              sunt ips.</p>
+                      </div>
+                      <div class="card-link">
+                        <a href="#">Ver más</a>
+                      </div>
+                  </div>
+
+              </div>
+              <div class="swiper-slide">
+                  <img src="img/02.jpg"
+                      alt="">
+                  <div class="card-description">
+                      <div class="card-title">
+                          <h4>Descripción</h4>
+                      </div>
+                      <div class="card-text">
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
+                              modi
+                              sunt ips.</p>
+                      </div>
+                      <div class="card-link">
+                        <a href="#">Ver más</a>
+                      </div>
+              </div>
+          </div>
+              <div class="swiper-slide">
+                  <img src="img/03.jpg"
+                  alt="">
+              <div class="card-description">
+                  <div class="card-title">
+                      <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
+                          modi
+                          sunt ips.</p>
+                  </div>
+                  <div class="card-link">
+                    <a href="#">Ver más</a>
+                  </div>
+              </div>
+          </div>
+              <div class="swiper-slide">
+                  <img src="img/04.jpg"
+                  alt="">
+              <div class="card-description">
+                  <div class="card-title">
+                      <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
+                          modi
+                          sunt ips.</p>
+                  </div>
+                  <div class="card-link">
+                    <a href="#">Ver más</a>
+                  </div>
+              </div>
+          </div>
+              <div class="swiper-slide">
+                  <img src="img/05.jpg"
+                  alt="">
+              <div class="card-description">
+                  <div class="card-title">
+                      <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
+                          modi
+                          sunt ips.</p>
+                  </div>
+                  <div class="card-link">
+                    <a href="#">Ver más</a>
+                  </div>
+              </div>
+          </div>
+             
+              <div class="swiper-slide">
+                  <img src="img/06.jpg"
+                  alt="">
+              <div class="card-description">
+                  <div class="card-title">
+                      <h4>Descripción</h4>
+                  </div>
+                  <div class="card-text">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum enim possimus dolorum non,
+                          modi
+                          sunt ips.</p>
+                  </div>
+                  <div class="card-link">
+                    <a href="#">Ver más</a>
+                  </div>
+              </div>
+          </div>
+              </div>
+     
+          </div>
+       
+       
+
+      </div>
+
+  </div>-->
+  <!-- Swiper JS 
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>-->
+    
+  </article>
+
+  <!--  Pie de Pagina, Información de contacto   -->
+  <footer class="pie-pagina" id="pie-pagina">
+    <div class="grupo-1">
+      <div class="box">
+        <figure>
+          <a href="#">
+            <img src="img/logo.png" alt="Logo de SLee Dw">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2>SOBRE NOSOTROS</h2>
+        <p>Granja Avícola Medellín</p>
+        <p>Comunicate con Nosotros unicamente por WhatsApp</p>
+        <p>3122911443 - 3132915619</p>
+        <p>Por Correo</p>
+        <p>EggRut@gmail.com</p>
+      </div>
+      <div class="box">
+        <h2>SIGUENOS</h2>
+        <div class="red-social">
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-instagram"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-youtube"></a>
+        </div>
+      </div>
+    </div>
+    <div class="grupo-2">
+      <small>&copy; 2023 <b>EggRut</b> - Todos los Derechos Reservados.</small>
+    </div>
+  </footer>
+
+  <!--  Link de JAVASCRIPT, FONTS   -->
+  <script src="js/app.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> //Codigo Viejo, no funcional-->
+
+
+
+</body>
+
+</html>
