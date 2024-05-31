@@ -1,0 +1,92 @@
+[
+    {
+        "id": "huevoB-01",
+        "titulo": "Huevo Blanco A",
+        "imagen": "./img/A/BlancoA.jpg",
+        "categoria": {
+            "nombre": "A",
+            "id": "A"
+        },
+        "precio": 500
+    },
+    {
+        "id": "huevoB-02",
+        "titulo": "Huevo Blanco A x 15u",
+        "imagen": "./img/A/BlancoAx15.jpg",
+        "categoria": {
+            "nombre": "A",
+            "id": "A"
+        },
+        "precio": 7500
+    },
+    {
+        "id": "huevoB-03",
+        "titulo": "Huevo Blanco A x 30u",
+        "imagen": "./img/A/BlancoAx30.jpg",
+        "categoria": {
+            "nombre": "A",
+            "id": "A"
+        },
+        "precio": 15000
+    },
+    {
+        "id": "huevoC-01",
+        "titulo": "Huevo Marron AA",
+        "imagen": "./img/AA/CafeAA.jpg",
+        "categoria": {
+            "nombre": "AA",
+            "id": "AA"
+        },
+        "precio": 500
+    },
+    {
+        "id": "huevoC-02",
+        "titulo": "Huevo Marron AA x 15u",
+        "imagen": "./img/AA/CafeAAx15.jpg",
+        "categoria": {
+            "nombre": "AA",
+            "id": "AA"
+        },
+        "precio": 7500
+    },
+    {
+        "id": "huevoC-03",
+        "titulo": "Huevo Marron AA x 30u",
+        "imagen": "./img/AA/CafeAAx30.jpg",
+        "categoria": {
+            "nombre": "AA",
+            "id": "AA"
+        },
+        "precio": 15000
+    },
+    {
+        "id": "huevoAZ-01",
+        "titulo": "Huevo Azul AAA",
+        "imagen": "./img/AAA/AzulAAA.jpg",
+        "categoria": {
+            "nombre": "AAA",
+            "id": "AAA"
+        },
+        "precio": 500
+    },
+    {
+        "id": "huevoAZ-02",
+        "titulo": "Huevo Azul AAA x 15u",
+        "imagen": "./img/AAA/AzulAAAx15.jpg",
+        "categoria": {
+            "nombre": "AAA",
+            "id": "AAA"
+        },
+        "precio": 7500
+    },
+    {
+        "id": "huevoAZ-03",
+        "titulo": "Huevo Azul AAA x 30u",
+        "imagen": "./img/AAA/AzulAAAx30.jpg",
+        "categoria": {
+            "nombre": "AAA",
+            "id": "AAA"
+        },
+        "precio": 15000
+    }
+]
