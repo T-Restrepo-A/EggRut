@@ -1,3 +1,16 @@
+<?php
+
+session_start();
+error_reporting(0);
+
+$validar = $_SESSION['correo'];
+
+if( $validar == null || $validar = ''){
+
+    header("Location: loginPagina.html");
+    die();
+} 
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -27,7 +40,7 @@
             <nav>
                 <ul class="menu">
                     <li>
-                        <a class="boton-menu boton-volver" href="../Proyecto_wiper/index.html">
+                        <a class="boton-menu boton-volver" href="../dashboard.html">
                             <i class="bi bi-arrow-return-left"></i> Volver 
                         </a>
                     </li>

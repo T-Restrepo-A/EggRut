@@ -1,7 +1,7 @@
 <?php
-/*if(isset($_SESSION['doc'])){
-    echo "<script>window.location='dashboard.php'; </script>";
-}else{*/
+if(isset($_SESSION['correo'])){
+    echo "<script>window.location='LoginPagina.html'; </script>";
+}else
 if(isset($_POST['ingresar'])){
     
     include "conexion.php";
@@ -17,11 +17,10 @@ if(isset($_POST['ingresar'])){
     $resultado=mysqli_num_rows($consultar);
     
     while($fila = mysqli_fetch_array($consultar)){
-        $_SESSION['nombre']=$fila['nombre'];
         $_SESSION['contraseña']=$fila['contraseña'];
         $_SESSION['correo']=$fila['correo'];
                
-echo "<script>window.location='index.html'; </script>";
+echo "<script>window.location='./index.php'; </script>";
 }
 echo "<script>alert('Clave y/o Nombre Incorrectos');</script>";
 echo "<script>window.location='loginPagina.html'; </script>";

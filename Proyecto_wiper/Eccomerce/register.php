@@ -24,7 +24,7 @@ if (isset($_POST['register'])) {
     }else{
         echo "<script>alert('Registro NO exitoso, revise los campos e intentelo de nuevo');</script>";
         
-        echo "<script>window.location='index.html'; </script>"; 
+        echo "<script>window.location='../dashboard.html'; </script>"; 
     }  
 }
 
