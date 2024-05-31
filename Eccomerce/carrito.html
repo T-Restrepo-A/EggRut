@@ -76,7 +76,7 @@
                 return actions.order.create( {
                     purchase_units: [{
                         amount: {
-                            value: '100'
+                            value: productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0)
                         }
                     }]
             })

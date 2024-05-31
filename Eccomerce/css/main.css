@@ -250,6 +250,7 @@ main {
 
 .carrito-acciones-derecha {
     display: flex;
+    
 }
 
 .carrito-acciones-total {
@@ -260,9 +261,16 @@ main {
     text-transform: uppercase;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
-    gap: 1rem;
+    gap: 6rem;
+    border: #CC8561 4px double;
+    align-items: center;
 }
 
+.paypal-button-container{
+    border: #CC8561 4px double;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
 
 
 .header-mobile {
