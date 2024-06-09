@@ -21,8 +21,75 @@ if( $validar == null || $validar = ''){
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    
 </head>
 <body>
+
+<nav class="navbar">
+
+<div class="profile-dropdown">
+  <div onclick="toggle()" class="profile-dropdown-btn">
+    <div class="profile-img">
+      <i class="fa-solid fa-circle"></i>
+    </div>
+
+    <span
+      >Tomas
+      <i class="fa-solid fa-angle-down"></i>
+    </span>
+  </div>
+
+  <ul class="profile-dropdown-list">
+    <li class="profile-dropdown-list-item">
+      <a href="#">
+        <i class="fa-regular fa-user"></i>
+        Edit Profile
+      </a>
+    </li>
+
+    <li class="profile-dropdown-list-item">
+      <a href="#">
+        <i class="fa-regular fa-envelope"></i>
+        Inbox
+      </a>
+    </li>
+
+    <li class="profile-dropdown-list-item">
+      <a href="#">
+        <i class="fa-solid fa-chart-line"></i>
+        Analytics
+      </a>
+    </li>
+
+    <li class="profile-dropdown-list-item">
+      <a href="#">
+        <i class="fa-solid fa-sliders"></i>
+        Settings
+      </a>
+    </li>
+
+    <li class="profile-dropdown-list-item">
+      <a href="#">
+        <i class="fa-regular fa-circle-question"></i>
+        Help & Support
+      </a>
+    </li>
+    <hr />
+
+    <li class="profile-dropdown-list-item">
+      <a href="#">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+        Log out
+      </a>
+    </li>
+  </ul>
+</div>
+</nav>
+
     <div class="wrapper">
         <header class="header-mobile">
             <h1 class="logo">EggRut</h1>
