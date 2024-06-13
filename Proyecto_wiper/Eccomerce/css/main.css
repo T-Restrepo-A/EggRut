@@ -303,7 +303,8 @@ main {
     align-items: center;
     height: 70px;
     background-color: var(--white);
-    padding: 0 8%;
+    justify-content: right;
+    padding: 0 8px;
     box-shadow: var(--shadow);
   }
   
@@ -311,25 +312,8 @@ main {
     cursor: pointer;
   }
   
-  .navbar-list {
-    width: 100%;
-    text-align: right;
-    padding-right: 2rem;
-  }
-  
-  .navbar-list li {
-    display: inline-block;
-    margin: 0 1rem;
-  }
-  
-  .navbar-list li a {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--black);
-    text-decoration: none;
-  }
-  
   .profile-dropdown {
+    
     position: relative;
     width: fit-content;
   }

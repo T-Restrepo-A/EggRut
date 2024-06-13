@@ -3,13 +3,8 @@
 session_start();
 error_reporting(0);
 
-$validar = $_SESSION['correo'];
+require('listar.php');
 
-if( $validar == null || $validar = ''){
-
-    header("Location: loginPagina.html");
-    die();
-} 
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -30,7 +25,7 @@ if( $validar == null || $validar = ''){
 <body>
 
 <nav class="navbar">
-
+</h1>
 <div class="profile-dropdown">
   <div onclick="toggle()" class="profile-dropdown-btn">
     <div class="profile-img">
@@ -38,7 +33,7 @@ if( $validar == null || $validar = ''){
     </div>
 
     <span
-      >Tomas
+      ><?php echo $nombre; ?>
       <i class="fa-solid fa-angle-down"></i>
     </span>
   </div>
@@ -81,7 +76,7 @@ if( $validar == null || $validar = ''){
     <hr />
 
     <li class="profile-dropdown-list-item">
-      <a href="#">
+      <a href="salir.php">
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
         Log out
       </a>
