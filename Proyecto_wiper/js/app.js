@@ -46,6 +46,10 @@ btnSignUp.addEventListener("click", e=>{
     formRegister.classList.remove("hide");
 })
 
+// Redireccionar el boton volver
+
+
+
 //-----------------------Validaciones Codigo de login------------------------------
 
 function validateForm() {

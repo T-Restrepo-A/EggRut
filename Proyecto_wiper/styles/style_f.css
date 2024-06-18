@@ -55,6 +55,8 @@ body {
     cursor: pointer;
     transition: background-color .3s ease;
 }
+
+
 .info-childs input:hover{
     background-color: #9191bd;
     border: none;
