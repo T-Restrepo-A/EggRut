@@ -14,7 +14,6 @@ require('cambiar_contraseña.php');
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Usuario</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 
@@ -50,20 +49,28 @@ require('cambiar_contraseña.php');
                                 </div>
                             </div>
                             <hr class="border-light m-0">
+
+                        <form action="cambiar_informacion.php" method="post">
+
                             <div class="card-body">
                                 <div class="form-group">
                                     <label class="form-label">Nombre</label>
-                                    <input type="text" class="form-control" value="<?php echo $nombre; ?>">
+                                    <input type="text" name="nombre" class="form-control" value="<?php echo $nombre; ?>">
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">E-mail</label>
-                                    <input type="text" class="form-control mb-1" value="<?php echo $correo; ?>">
-                                    <div class="alert alert-warning mt-3">
+                                    <input type="text" name="correo" class="form-control mb-1" value="<?php echo $correo; ?>">
+                                    <!--<div class="alert alert-warning mt-3">
                                         Your email is not confirmed. Please check your inbox.<br>
                                         <a href="javascript:void(0)">Resend confirmation</a>
-                                    </div>
+                                    </div> -->
+                                </div>
+                                <div class="text-right mt-3">
+                                    <button type="submit" class="btn btn-primary">Guardar Cambios</button>&nbsp;
+                                    <button type="button" class="btn btn-default">Cancelar</button>
                                 </div>
                             </div>
+                        </form>    
                         </div>
                         <div class="tab-pane fade" id="account-change-password">
                             <form action="cambiar_contraseña.php" method="post">
