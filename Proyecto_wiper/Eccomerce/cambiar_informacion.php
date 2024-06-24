@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "UPDATE tbl_usuario SET nombre='$new_name', correo='$new_email' WHERE id_usuario='$id'";
 
     if ($con->query($sql) === TRUE) {
-        echo "<script>alert('Nombre y Correo Actualizado Satisfactoriamente');</script>";
+        echo "<script>alert('Nombre Y/O Correo Actualizado Satisfactoriamente');</script>";
         echo "<script>window.location='user.php'; </script>";
     } else {
         echo "Error updating record: " . $con->error;

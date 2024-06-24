@@ -30,15 +30,16 @@ require('cambiar_contraseña.php');
                     <div class="list-group list-group-flush account-settings-links">
                         <a class="list-group-item list-group-item-action active" data-toggle="list" href="#account-general">General</a>
                         <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Cambiar contraseña</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Conecciones</a>
-                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notificaciones</a>
+                        <!--<a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Conecciones</a>
+                        <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notificaciones</a> -->
+                        <a class="list-group-item list-group-item-action" href="index.php" onclick="return confirm('¿Estás seguro de que deseas volver?')">Volver</a>
                     </div>
                 </div>
                 <div class="col-md-9">
                     <div class="tab-content">
                         <div class="tab-pane fade active show" id="account-general">
                             <div class="card-body media align-items-center">
-                                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt class="d-block ui-w-80">
+                                <img src="/eggrut/proyecto_wiper/Eccomerce/img/user.jpg" alt class="d-block ui-w-80">
                                 <div class="media-body ml-4">
                                     <label class="btn btn-outline-primary">
                                         Sube una Nueva Imagen
