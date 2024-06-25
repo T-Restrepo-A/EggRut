@@ -15,6 +15,8 @@ require('cambiar_contraseña.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Usuario</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
 
 </head>
@@ -32,7 +34,7 @@ require('cambiar_contraseña.php');
                         <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-change-password">Cambiar contraseña</a>
                         <!--<a class="list-group-item list-group-item-action" data-toggle="list" href="#account-connections">Conecciones</a>
                         <a class="list-group-item list-group-item-action" data-toggle="list" href="#account-notifications">Notificaciones</a> -->
-                        <a class="list-group-item list-group-item-action" href="index.php" onclick="return confirm('¿Estás seguro de que deseas volver?')">Volver</a>
+                        <a class="list-group-item list-group-item-action" id="boton-volver">Volver</a>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -203,7 +205,24 @@ require('cambiar_contraseña.php');
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript">
+const botonVolver = document.querySelector("#boton-volver");
+botonVolver.addEventListener("click", accionVolver);
+function accionVolver() {
 
+    Swal.fire({
+        title: '¿Estás Seguro que Quieres Volver',
+        icon: 'question',
+        html: `Volveras al Carrito de Compras.`,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'index.php';
+        }
+      })
+}
     </script>
 </body>
 

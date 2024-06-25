@@ -270,6 +270,7 @@ main {
     border: #CC8561 4px double;
     border-top-right-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    
 }
 
 
@@ -407,6 +408,10 @@ main {
     background-color: var(--secondary-light);
   }
 
+  #boton-salir:hover {
+    cursor: pointer; /* Cambia el cursor a una mano (como un enlace) */
+}
+
 /***  Css user     ***/
   
 
@@ -516,6 +521,10 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
     border-color: rgba(24, 28, 33, 0.03) !important;
 }
 
+#boton-volver:hover {
+    cursor: pointer; 
+}
+
 /*** MEDIA QUERIES ***/
 
 @media screen and (max-width: 850px) {
@@ -623,3 +632,4 @@ html:not(.dark-style) .account-settings-links .list-group-item.active {
         grid-template-columns: 1fr;
     }
 }
+

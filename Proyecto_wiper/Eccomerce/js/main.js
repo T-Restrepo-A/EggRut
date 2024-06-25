@@ -13,6 +13,7 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloPrincipal = document.querySelector("#titulo-principal");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
+const botonSalir = document.querySelector("#boton-salir");
 
 
 botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
@@ -137,3 +138,22 @@ const toggle = () => classList.toggle("active");
 window.addEventListener("click", function (e) {
   if (!btn.contains(e.target)) classList.remove("active");
 });
+
+
+botonSalir.addEventListener("click", accionSalir);
+function accionSalir() {
+
+    Swal.fire({
+        title: '¿Estás seguro que deseas salir?',
+        icon: 'question',
+        html: `Al Cerrar Sesión Seras Redirigido a la Pagina Principal del Aplicativo.`,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText: 'Sí',
+        cancelButtonText: 'No'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location.href = 'salir.php';
+        }
+      })
+}

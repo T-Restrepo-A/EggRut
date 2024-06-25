@@ -16,10 +16,8 @@ require('listar.php');
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/main.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     
 </head>
 <body>
@@ -47,7 +45,7 @@ require('listar.php');
     </li>
 
     <li class="profile-dropdown-list-item">
-      <a href="salir.php" onclick="return confirm('¿Estás seguro de que quieres cerrar sesión?');">
+      <a id="boton-salir">
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
         Log out
       </a>
@@ -72,11 +70,6 @@ require('listar.php');
             </header>
             <nav>
                 <ul class="menu">
-                    <li>
-                        <a class="boton-menu boton-volver" href="../dashboard.html">
-                            <i class="bi bi-arrow-return-left"></i> Volver 
-                        </a>
-                    </li>
                     <li>
                         <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
                     </li>
@@ -108,6 +101,7 @@ require('listar.php');
         </main>
     </div>
     
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/menu.js"></script>
