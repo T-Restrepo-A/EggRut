@@ -12,6 +12,7 @@ nav{
     width: 100%;
 }
 
+
 .enlace{
     position: absolute;
     padding: 4px 30px;
@@ -183,13 +184,13 @@ section{
 
 .carousel__lista {
 	overflow: hidden;
-    
 }
 
 .carousel__elemento {
 	text-align: center;
     color: black;
     font-family: Tahoma;
+    margin: 10px;
 }
 
 .carousel__indicadores .glider-dot {
