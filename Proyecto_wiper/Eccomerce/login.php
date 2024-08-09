@@ -1,4 +1,5 @@
 <?php
+
 if(isset($_SESSION['correo'])){
     echo "<script>window.location='LoginPagina.html'; </script>";
 } else if(isset($_POST['ingresar'])){
@@ -27,6 +28,7 @@ if(isset($_SESSION['correo'])){
         // Si no se encuentra el correo, mostrar mensaje de error
         echo "<script>alert('Clave y/o Correo Incorrectos');</script>";
         echo "<script>window.location='loginPagina.html'; </script>";
+        
     }
 }
 ?>

@@ -6,6 +6,7 @@ error_reporting(0);
 require('listar.php');
 
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -54,6 +55,7 @@ require('listar.php');
 </div>
 </nav>
 
+
     <div class="wrapper">
         <header class="header-mobile">
             <h1 class="logo">EggRut</h1>
@@ -90,7 +92,7 @@ require('listar.php');
                 </ul>
             </nav>
             <footer>
-                <p class="texto-footer">© 2024 EggRut</p>
+                <p class="texto-footer"> 2024 EggRut</p>
             </footer>
         </aside>
         <main>
