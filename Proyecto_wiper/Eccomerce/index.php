@@ -41,14 +41,14 @@ require('listar.php');
     <li class="profile-dropdown-list-item">
       <a href="user.php">
         <i class="fa-regular fa-user"></i>
-        Edit Profile
+        Editar Perfil
       </a>
     </li>
 
     <li class="profile-dropdown-list-item">
       <a id="boton-salir">
         <i class="fa-solid fa-arrow-right-from-bracket"></i>
-        Log out
+        Salir
       </a>
     </li>
   </ul>

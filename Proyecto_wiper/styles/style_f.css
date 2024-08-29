@@ -33,6 +33,17 @@ body {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
+.information-recover {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color:  #c7eef3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
 .info-childs{
     width: 100%;
     padding: 0 30px;
@@ -55,6 +66,38 @@ body {
     cursor: pointer;
     transition: background-color .3s ease;
 }
+.info-childs-recover .go-back{
+    cursor: pointer;
+}
+.info-childs-recover {
+    width: 100%;
+    padding: 0 30px;
+}
+.info-childs-recover  h2{
+    font-size: 2.5rem;
+    color: #333;
+}
+.info-childs-recover  p{
+    margin: 15px 0;
+    color: #555;
+}
+.info-childs-recover  input{
+    background-color: transparent;
+    outline: none;
+    border: solid 2px #9191bd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: #9191bd;
+    cursor: auto;
+    transition: background-color .3s ease;
+}
+
+.info-childs-recover input:hover{
+    background-color: #9191bd;
+    border: none;
+    color: #fff;
+    box-shadow: 0 5px 7px rgba(0,0,0,0.1);
+}
 
 
 .info-childs input:hover{
@@ -74,8 +117,20 @@ body {
     border-bottom-right-radius: 20px;
 }
 
+
 .form-information-childs{
     padding: 0 30px;
+}
+.form-information-childs .forgot-pass{
+    
+    background-color: #9191bd;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.1);
 }
 .form-information-childs h2{
     color: #333;
@@ -84,6 +139,7 @@ body {
 .form-information-childs p{
     color: #555;
 }
+
 .icons {
     margin: 15px 0;
 }

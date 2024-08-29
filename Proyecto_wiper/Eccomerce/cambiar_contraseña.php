@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt = $con->prepare('UPDATE  tbl_usuario SET contraseña = ? WHERE id_usuario = ?');
     $stmt->bind_param('si', $new_password_hash, $id);
     if ($stmt->execute()) {
-        echo "<script>alert('Cambio hecho exitosamente');</script>";
+        echo "<script>alert('Contraseña Actualizada Exitosamente');</script>";
         echo "<script>window.location='user.php'; </script>";
     } else {
         echo 'Error al cambiar la contraseña.';
