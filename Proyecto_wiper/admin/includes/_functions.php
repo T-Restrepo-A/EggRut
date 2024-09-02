@@ -114,14 +114,10 @@ function acceso_user() {
 
     }else if($filas['rol'] == 2){//lector
         header('Location: ../views/lector.php');
-    }
-    
-    
-    else{
-
+    }else{
+        echo "<script> alert('Campos Incorrectos');</script>";
         header('Location: login.php');
         session_destroy();
-
     }
 
   

@@ -15,8 +15,17 @@ if(isset($_POST['registrar'])){
     $consulta= "INSERT INTO tbl_admin (nombre, correo, telefono, password, rol)
     VALUES ('$nombre', '$correo','$telefono','$password', '$rol' )";
 
-    mysqli_query($conexion, $consulta);
+    $resultado= mysqli_query($conexion, $consulta);
     mysqli_close($conexion);
+
+    if ($resultado){
+      echo "<script> alert('Registro Exitoso');</script>";
+      echo "<script>window.location='../views/user.php';</script>";
+  }else {
+      echo "<script>alert('Registro NO exitoso, hubo un error al guardar los datos');</script>";
+      echo "<script>window.location='../index.php'; </script>"; 
+  }
+
 
     header('Location: ../views/user.php');
   }
