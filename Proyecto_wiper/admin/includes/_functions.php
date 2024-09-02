@@ -21,6 +21,16 @@ if (isset($_POST['accion'])){
             acceso_user();
             break;
 
+            case 'editar_comprador':
+            editar_comprador();
+            break; 
+    
+            case 'eliminar_comprador';
+            eliminar_comprador();
+        
+             break;
+    
+
 
 		}
 
@@ -39,6 +49,7 @@ if (isset($_POST['accion'])){
 
 }
 
+
 function eliminar_registro() {
     $conexion=mysqli_connect("localhost","root","","eggrut");
     extract($_POST);
@@ -49,6 +60,39 @@ function eliminar_registro() {
 
 
     header('Location: ../views/user.php');
+
+}
+
+
+
+function editar_comprador() {
+    $conexion = mysqli_connect("localhost", "root", "", "eggrut");
+    extract($_POST);
+
+    // Actualizar nombre y correo
+    $consulta = "UPDATE tbl_usuario SET nombre = '$nombre', correo = '$correo' WHERE id_usuario = '$id' ";
+    mysqli_query($conexion, $consulta);
+
+    // Si se proporcionó una nueva contraseña, actualizarla
+    if (!empty($_POST['nueva_contrasena'])) {
+        $nueva_contrasena_hashed = password_hash($_POST['nueva_contrasena'], PASSWORD_DEFAULT);
+        $consulta_contraseña = "UPDATE tbl_usuario SET contraseña = '$nueva_contrasena_hashed' WHERE id_usuario = '$id' ";
+        mysqli_query($conexion, $consulta_contraseña);
+    }
+
+    header('Location: ../views/comprador.php');
+}
+
+function eliminar_comprador() {
+    $conexion=mysqli_connect("localhost","root","","eggrut");
+    extract($_POST);
+    $id= $_POST['id_usuario'];
+    $consulta= "DELETE FROM tbl_usuario WHERE id_usuario= $id";
+
+    mysqli_query($conexion, $consulta);
+
+
+    header('Location: ../views/comprador.php');
 
 }
 
@@ -82,6 +126,9 @@ function acceso_user() {
 
   
 }
+
+
+
 
 
 

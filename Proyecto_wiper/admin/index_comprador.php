@@ -32,7 +32,7 @@ if( $validar == null || $validar = ''){
 <body id="page-top">
 
 
-<form  action="./includes/validar.php" method="POST">
+<form  action="./includes/validar_comprador.php" method="POST">
 <div id="login" >
         <div class="container">
             <div id="login-row" class="row justify-content-center align-items-center">
@@ -41,31 +41,19 @@ if( $validar == null || $validar = ''){
                     
                             <br>
                             <br>
-                            <h3 class="text-center">Registro de nuevo usuario</h3>
+                            <h3 class="text-center">Registro de Nuevo Comprador</h3>
                             <div class="form-group">
                             <label for="nombre" class="form-label">Nombre *</label>
                             <input type="text"  id="nombre" name="nombre" class="form-control" required minlength="3" maxlength="20">
                             </div>
                             <div class="form-group">
+                                <label for="contraseña">Contraseña:</label><br>
+                                <input type="password" name="contraseña" id="contraseña" class="form-control" placeholder="Contraseña" required minlength="10" pattern="^(?=.*[!@#$%^&*()_+{}|;:,.<>?]).*$">
+                            </div>
+                            <div class="form-group">
                                 <label for="username">Correo:</label><br>
                                 <input type="email" name="correo" id="correo" class="form-control" placeholder="example@example.com">
                             </div>
-                            <div class="form-group">
-                                  <label for="telefono" class="form-label">Telefono *</label>
-                                <input type="tel"  id="telefono" name="telefono" class="form-control" placeholder="1234567890" required minlength="10" maxlength="15">
-                                
-                            </div>
-                            <div class="form-group">
-                                <label for="password">Contraseña:</label><br>
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Contraseña" required minlength="10" pattern="^(?=.*[!@#$%^&*()_+{}|;:,.<>?]).*$">
-                            </div>
-                            
-                            <div class="form-group">
-                                  <label for="rol" class="form-label">Rol de usuario *</label>
-                                <input type="number"  id="rol" name="rol" class="form-control" placeholder="Escribe el rol, 1 admin, 2 lector..">
-                             
-                            </div>
-                      
                         
                            <br>
 

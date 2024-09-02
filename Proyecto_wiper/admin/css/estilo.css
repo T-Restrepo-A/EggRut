@@ -1,3 +1,39 @@
 body{
 	padding-top: 70px;
+	display: flex;
+}
+#sidebar {
+	min-width: 250px;
+	max-width: 250px;
+	background: #343a40;
+	color: #fff;
+	transition: all 0.3s;
+}
+#sidebar.active {
+	margin-left: -250px;
+}
+#sidebar .sidebar-header {
+	padding: 20px;
+	background: #343a40;
+}
+#sidebar ul.components {
+	padding: 20px 0;
+}
+#sidebar ul p {
+	color: #fff;
+	padding: 10px;
+}
+#sidebar ul li a {
+	padding: 10px;
+	font-size: 1.1em;
+	display: block;
+	text-decoration: none;
+}
+#sidebar ul li a:hover {
+	color: #343a40;
+	background: #fff;
+}
+#content {
+	width: 100%;
+	padding: 20px;
 }
