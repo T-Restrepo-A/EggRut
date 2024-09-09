@@ -21,8 +21,28 @@ if (isset($_POST['register'])) {
             $resultado = mysqli_query($con,$registrar);
             
             if ($resultado) {
-                echo"<script>alert('Registro exitoso');</script>";
-                echo"<script>window.location='loginPagina.html';</script>";
+                echo "<!DOCTYPE html>
+                <html lang='es'>
+                <head>
+                    <meta charset='UTF-8'>
+                    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+                    <title>Actualización</title>
+                    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+                </head>
+                <body>
+                    <script>
+                        Swal.fire({
+                            title: 'Éxito',
+                            text: 'Registro exitoso',
+                            icon: 'success'
+                        }).then((result) => {
+                            if (result.isConfirmed) {
+                                window.location = 'loginPagina.html';
+                            }
+                        });
+                    </script>
+                </body>
+                </html>";
             } else {
                 echo "<script>alert('Registro NO exitoso, hubo un error al guardar los datos');</script>";
                 echo "<script>window.location='../dashboard.html'; </script>"; 
@@ -32,8 +52,28 @@ if (isset($_POST['register'])) {
             echo "<script>window.location='../dashboard.html'; </script>"; 
         }
     }else{
-        echo "<script>alert('Registro NO exitoso, revise los campos e intentelo de nuevo');</script>";
-        echo "<script>window.location='../dashboard.html'; </script>"; 
+        echo "<!DOCTYPE html>
+        <html lang='es'>
+        <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>Actualización</title>
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    title: 'Éxito',
+                    text: 'Registro NO exitoso, revise los campos e intentelo de nuevo',
+                    icon: 'success'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location = '../dashboard.html';
+                    }
+                });
+            </script>
+        </body>
+        </html>";
     }  
 }
 

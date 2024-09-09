@@ -31,8 +31,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt = $con->prepare('UPDATE  tbl_usuario SET contraseña = ? WHERE id_usuario = ?');
     $stmt->bind_param('si', $new_password_hash, $id);
     if ($stmt->execute()) {
-        echo "<script>alert('Contraseña Actualizada Exitosamente');</script>";
-        echo "<script>window.location='user.php'; </script>";
+        echo "<!DOCTYPE html>
+        <html lang='es'>
+        <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>Actualización</title>
+            <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
+        </head>
+        <body>
+            <script>
+                Swal.fire({
+                    title: 'Éxito',
+                    text: 'Contraseña Actualizada Exitosamente',
+                    icon: 'success'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        window.location = 'user.php';
+                    }
+                });
+            </script>
+        </body>
+        </html>";
     } else {
         echo 'Error al cambiar la contraseña.';
     }

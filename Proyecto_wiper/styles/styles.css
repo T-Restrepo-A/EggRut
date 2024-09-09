@@ -10,6 +10,7 @@ nav{
     background: #E3DAD0;
     height: 110px;
     width: 100%;
+    z-index: 1000;
 }
 
 
@@ -80,6 +81,7 @@ li a.active, li a:hover{
         left: -100%;
         text-align: center;
         transition: all .5s;
+        z-index: 1000;
     }
     nav ul li{
         display: block;
