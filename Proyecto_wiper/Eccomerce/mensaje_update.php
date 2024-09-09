@@ -48,9 +48,9 @@
 <body>
     <div class="message-container">
         <h1>Recuperación de contraseña</h1>
-        <p>Se ha enviado el mensaje correctamente. Por favor, revisa tu correo para recuperar tu contraseña.</p>
+        <p>Se ha cambiado la contraseña exitosamente, intenra iniciar sesión con esta nueva contraseña.</p>
         <br><br>
-        <input type="button" value="¡Volver al login!" id="go-back" class="go-back" onclick="window.location.href='loginPagina.html'">
+        <input type="button" value="¡Iniciar Sesión!" id="go-back" class="go-back" onclick="window.location.href='loginPagina.html'">
     </div>
     
 </body>

@@ -16,6 +16,7 @@ require('cambiar_contraseña.php');
     <title>Perfil Usuario</title>
     <link rel="shortcut icon" href="../img/logo.png" type="/image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>
     <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
     <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">

@@ -21,20 +21,33 @@ error_reporting(0);
                 <!--<input type="button" value="¡Volver al Inicio!" id="go-back" class="go-back" onclick="window.location.href='../dashboard.html'"> -->
                 <br><br><br>
                 <h2>Recuperar Contraseña</h2>
-                <form action="recuperar.php" method="post" class="form">
+                <form action="email_cambiarContraseña.php" method="post" class="form" onsubmit="return validateForm()">
                     <label>
                         <i class='bx bx-lock'></i>
-                        <input type="password" id="nueva-contrasena" name="nueva-contrasena" placeholder="Nueva Contraseña" required>
+                        <input type="password" id="nueva_contraseña" name="nueva_contraseña" placeholder="Nueva Contraseña" required>
                     </label>
                     <label>
                         <i class='bx bx-lock'></i>
-                        <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" placeholder="Confirmar Contraseña" required>
+                        <input type="password" id="confirmar_contraseña" name="confirmar_contraseña" placeholder="Confirmar Contraseña" required>
                     </label>
+                    <input type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
                     <input type="submit" name="recuperar" value="Cambiar Contraseña">
                 </form>
             </div>
         </div>
     </div>
     <script src="../js/app.js"></script>
+    <script>
+        function validateForm() {
+            
+	    const password = document.getElementById("nueva_contraseña").value;
+	    const confirmPassword = document.getElementById("confirmar_contraseña").value;
+
+	if (password !== confirmPassword) {
+		alert("Las contraseñas no coinciden. Por favor, inténtalo de nuevo.");
+		return false;
+	}
+}
+    </script>
 </body>
 </html>

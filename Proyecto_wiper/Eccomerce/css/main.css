@@ -394,7 +394,7 @@ main {
     font-size: 1.1rem;
     width: 2.3rem;
     height: 2.3rem;
-    background-color: var(--secondary);
+    background-color: #af6c4e;
     color: var(--white);
     line-height: 2.3rem;
     text-align: center;
@@ -405,7 +405,7 @@ main {
   
   .profile-dropdown-list-item:hover {
     padding-left: 1.5rem;
-    background-color: var(--secondary-light);
+    background-color: var(--clr-main);
   }
 
   #boton-salir:hover {
