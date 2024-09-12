@@ -53,7 +53,7 @@ if( $validar == null || $validar = ''){
                             </div>
                             <div class="form-group">
                                 <label for="username">Correo:</label><br>
-                                <input type="email" name="correo" id="correo" class="form-control" placeholder="example@example.com">
+                                <input type="email" name="correo" id="correo" class="form-control" placeholder="example@example.com" required minlength="6" maxlength="30">
                             </div>
                         
                            <br>

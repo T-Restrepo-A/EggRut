@@ -25,6 +25,9 @@ require('listar.php');
 <body>
 
 <nav class="navbar">
+    <a href="#" class="enlace">
+      <img src="../img/copia2.jpg" alt="logo">
+    </a>
 </h1>
 <div class="profile-dropdown">
   <div onclick="toggle()" class="profile-dropdown-btn">

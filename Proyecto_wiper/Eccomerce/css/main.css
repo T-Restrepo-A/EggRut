@@ -28,12 +28,19 @@ a {
     text-decoration: none;
 }
 
+.enlace{
+    position: relative;
+    padding: 4px 83%;
+    
+}
+.logo{
+    height: 10px;
+}
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 4fr;
     background-color: var(--clr-main);
 }
-
 aside {
     padding: 2rem;
     padding-right: 0;

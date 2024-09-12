@@ -55,20 +55,20 @@ $usuario = mysqli_fetch_assoc($resultado);
                             <h3 class="text-center">Editar usuario</h3>
                             <div class="form-group">
                             <label for="nombre" class="form-label">Nombre *</label>
-                            <input type="text"  id="nombre" name="nombre" class="form-control" value="<?php echo $usuario['nombre'];?>"required>
+                            <input type="text"  id="nombre" name="nombre" class="form-control" value="<?php echo $usuario['nombre'];?>"required minlength="3" maxlength="20">
                             </div>
                             <div class="form-group">
                                 <label for="username">Correo:</label><br>
-                                <input type="email" name="correo" id="correo" class="form-control" placeholder="" value="<?php echo $usuario['correo'];?>">
+                                <input type="email" name="correo" id="correo" class="form-control" placeholder="" value="<?php echo $usuario['correo'];?>" minlength="6" maxlength="30">
                             </div>
                             <div class="form-group">
                                   <label for="telefono" class="form-label">Telefono *</label>
-                                <input type="tel"  id="telefono" name="telefono" class="form-control" value="<?php echo $usuario['telefono'];?>" required>
+                                <input type="tel"  id="telefono" name="telefono" class="form-control" value="<?php echo $usuario['telefono'];?>" minlength="10" maxlength="15">
                                 
                             </div>
                             <div class="form-group">
                                 <label for="password">Contraseña:</label><br>
-                                <input type="password" name="password" id="password" class="form-control" value="<?php echo $usuario['password'];?>" required>
+                                <input type="password" name="password" id="password" class="form-control" value="<?php echo $usuario['password'];?>" minlength="10" pattern="^(?=.*[!@#$%^&*()_+{}|;:,.<>?]).*$">
                              
                             </div>
 

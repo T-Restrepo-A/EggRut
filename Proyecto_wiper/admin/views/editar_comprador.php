@@ -56,7 +56,7 @@ $comprador = mysqli_fetch_assoc($resultado);
                             <h3 class="text-center">Editar comprador</h3>
                             <div class="form-group">
                             <label for="nombre" class="form-label">Nombre *</label>
-                            <input type="text"  id="nombre" name="nombre" class="form-control" value="<?php echo $comprador['nombre'];?>"required>
+                            <input type="text"  id="nombre" name="nombre" class="form-control" value="<?php echo $comprador['nombre'];?>" minlength="3" maxlength="20">
                             </div>
                             <div class="form-group">
                                 <label for="nueva_contrasena">Nueva contraseña (opcional):</label><br>
@@ -64,7 +64,7 @@ $comprador = mysqli_fetch_assoc($resultado);
                             </div>
                             <div class="form-group">
                                 <label for="username">Correo:</label><br>
-                                <input type="email" name="correo" id="correo" class="form-control" placeholder="" value="<?php echo $comprador['correo'];?>">
+                                <input type="email" name="correo" id="correo" class="form-control" placeholder="" value="<?php echo $comprador['correo'];?>"  minlength="6" maxlength="30">
                             </div>
                             <input type="hidden" name="accion" value="editar_comprador">
                             <input type="hidden" name="id" value="<?php echo $id;?>">
