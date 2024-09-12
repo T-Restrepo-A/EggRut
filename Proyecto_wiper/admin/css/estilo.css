@@ -1,11 +1,24 @@
+:root {
+    --clr-main: #CC8561;
+    --clr-main-light: #ececec;
+    --clr-white: #ececec;
+    --clr-gray: #e2e2e2;
+    --clr-red: #961818;
+}
+
 body{
 	padding-top: 70px;
 	display: flex;
 }
+.enlace{
+    position: relative;
+    padding: 4px 22%;
+    
+}
 #sidebar {
 	min-width: 250px;
 	max-width: 250px;
-	background: #343a40;
+	background-color: var(--clr-main);
 	color: #fff;
 	transition: all 0.3s;
 }
@@ -14,7 +27,7 @@ body{
 }
 #sidebar .sidebar-header {
 	padding: 20px;
-	background: #343a40;
+	background-color: var(--clr-main);
 }
 #sidebar ul.components {
 	padding: 20px 0;
@@ -28,6 +41,8 @@ body{
 	font-size: 1.1em;
 	display: block;
 	text-decoration: none;
+	color: white;
+	
 }
 #sidebar ul li a:hover {
 	color: #343a40;
@@ -36,4 +51,15 @@ body{
 #content {
 	width: 100%;
 	padding: 20px;
+}
+
+.table-beige {
+    background-color: #FFF5E6; /* Color beige claro */
+    color: #000000; /* Color del texto */
+    border: 1px solid #CC8561; /* Borde de la tabla */
+}
+
+.table-beige th, .table-beige td {
+    padding: 10px;
+    border: 1px solid #CC8561; /* Borde de las celdas */
 }

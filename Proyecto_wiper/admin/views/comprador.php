@@ -60,7 +60,7 @@ include 'header.php'
         
         
  
-      <table class="table table-striped table-dark " id= "table_id">
+      <table class="table table-striped table-beige " id= "table_id">
 
                    
                          <thead>    
